@@ -3,21 +3,24 @@ on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: 코드 가져오기
         uses: actions/checkout@v3
-        with:
-          submodules: true
+        # 서브모듈 옵션 제거
+
       - name: Hugo 설치
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
+
       - name: 사이트 빌드
         run: hugo --minify
+
       - name: GitHub Pages에 배포
         uses: peaceiris/actions-gh-pages@v3
         with:
