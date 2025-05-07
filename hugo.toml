@@ -1,4 +1,4 @@
-theme = "ananke"
+theme = "PaperMod"
 baseURL = "https://slowdive14.github.io/garden/"
 languageCode = "ko-kr"
 title = "잔향의 마음 로그(log)"
