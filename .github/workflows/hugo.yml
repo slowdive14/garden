@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: 코드 가져오기
         uses: actions/checkout@v3
-        # 서브모듈 옵션 제거
+        with:
+          submodules: true  # 서브모듈(테마 포함)을 함께 가져옵니다
 
       - name: Hugo 설치
         uses: peaceiris/actions-hugo@v2
@@ -19,7 +20,9 @@ jobs:
           extended: true
 
       - name: 사이트 빌드
-        run: hugo --minify --baseURL "https://slowdive14.github.io/garden/"
+        run: |
+          hugo --minify
+          touch public/.nojekyll
 
       - name: GitHub Pages에 배포
         uses: peaceiris/actions-gh-pages@v3
