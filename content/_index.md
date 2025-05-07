@@ -1,8 +1,9 @@
 ---
-title: "Content Placeholder"
-build:
-  render: never
-  list: never
-  publishResources: false
+title: 내 블로그 홈페이지
+date: 2025-05-07
+draft: false
 ---
 
+## 환영합니다!
+
+이곳은 제 블로그의 홈페이지입니다.

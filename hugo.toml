@@ -2,3 +2,20 @@ theme = "ananke"
 baseURL = "https://slowdive14.github.io/garden"
 languageCode = "ko-kr"
 title = "잔향의 마음 로그(log)"
+
+[params]
+  description = "심리치료와 프로그래밍 공부한 내용을 포스팅합니다."
+  enableSearch = true
+  
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
