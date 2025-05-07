@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 잔향의 마음 로그(log)</title>
-    <link>http://localhost:1313/garden/tags/</link>
+    <link>https://slowdive14.github.io/garden/tags/</link>
     <description>Recent content in Tags on 잔향의 마음 로그(log)</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/garden/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://slowdive14.github.io/garden/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/garden/tags/ai/</link>
+      <link>https://slowdive14.github.io/garden/tags/ai/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/tags/ai/</guid>
+      <guid>https://slowdive14.github.io/garden/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>바이브코딩</title>
-      <link>http://localhost:1313/garden/tags/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9/</link>
+      <link>https://slowdive14.github.io/garden/tags/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/tags/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9/</guid>
+      <guid>https://slowdive14.github.io/garden/tags/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>수용전념치료</title>
-      <link>http://localhost:1313/garden/tags/%EC%88%98%EC%9A%A9%EC%A0%84%EB%85%90%EC%B9%98%EB%A3%8C/</link>
+      <link>https://slowdive14.github.io/garden/tags/%EC%88%98%EC%9A%A9%EC%A0%84%EB%85%90%EC%B9%98%EB%A3%8C/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/tags/%EC%88%98%EC%9A%A9%EC%A0%84%EB%85%90%EC%B9%98%EB%A3%8C/</guid>
+      <guid>https://slowdive14.github.io/garden/tags/%EC%88%98%EC%9A%A9%EC%A0%84%EB%85%90%EC%B9%98%EB%A3%8C/</guid>
       <description></description>
     </item>
     <item>
       <title>코딩</title>
-      <link>http://localhost:1313/garden/tags/%EC%BD%94%EB%94%A9/</link>
+      <link>https://slowdive14.github.io/garden/tags/%EC%BD%94%EB%94%A9/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/tags/%EC%BD%94%EB%94%A9/</guid>
+      <guid>https://slowdive14.github.io/garden/tags/%EC%BD%94%EB%94%A9/</guid>
       <description></description>
     </item>
   </channel>
