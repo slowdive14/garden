@@ -4,8 +4,11 @@ title = "잔향의 마음 로그(log)"
 theme = "PaperMod"
 publishDir = "public"
 buildFuture = true
-paginate = 5
 enableRobotsTXT = true
+
+# 페이지네이션 설정 (최신 버전)
+[pagination]
+  pagerSize = 5
 
 [params]
   env = "production"
