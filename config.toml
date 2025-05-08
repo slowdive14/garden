@@ -21,16 +21,18 @@ enableRobotsTXT = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  disableSpecial1stPost = false
-  disableScrollToTop = false
-  comments = false
+  
+  # 홈 페이지에 포스트 목록만 보이도록 설정
+  mainSections = ["posts"]
   hideSummary = false
   summaryLength = 120
   truncate = true
   
-[params.homeInfoParams]
-  Title = "심리치료 + Programming"
-  Content = "심리치료와 프로그래밍이 만나 새로운 무언가를 창조할 수 있길 바라는 잔향의 학습 공간입니다."
+  # 홈 페이지 정보 섹션 완전히 비활성화
+  profileMode = { enabled = false }
+  
+  # 특별한 첫 번째 포스트 비활성화
+  disableSpecial1stPost = true
 
 [params.label]
   text = "잔향의 마음 로그"
