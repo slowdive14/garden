@@ -1,22 +1,9 @@
-/* 전체 레이아웃 조정 */
-.main {
-    max-width: 1200px;  /* 전체 컨테이너 최대 너비 설정 */
-    margin: 0 auto;
-    position: relative;  /* 자식 요소의 절대 위치 기준점 */
-}
-
-/* 본문 영역 조정 - 현재 보이는 너비 유지 */
-.post-content {
-    max-width: 100%;  /* 본문은 컨테이너 전체 너비 사용 */
-    padding-right: 280px;  /* TOC 영역만큼 오른쪽 패딩 추가 */
-}
-
-/* 우측 고정 TOC - 충분한 폭 확보 */
-.toc {
+/* TOC가 있는 단일 포스트 페이지에만 적용되는 스타일 */
+.page.post-single .toc {
     position: fixed;
-    right: calc((100% - 1200px) / 2 + 20px);  /* 중앙 정렬된 컨테이너 기준으로 오른쪽 위치 조정 */
+    right: 20px;
     top: 100px;
-    width: 250px;  /* TOC 폭 넓게 설정 */
+    width: 250px;
     max-height: calc(100vh - 150px);
     overflow-y: auto;
     padding: 15px;
@@ -27,17 +14,20 @@
     z-index: 100;
 }
 
-/* 중간 크기 화면 대응 */
-@media screen and (max-width: 1300px) {
-    .post-content {
-        padding-right: 0;  /* 패딩 제거 */
+/* 포스트 페이지에만 본문 너비 조정 - 메인 페이지는 영향 없음 */
+.page.post-single .post-content {
+    max-width: calc(100% - 280px);
+}
+
+/* 화면 크기에 따른 반응형 조정 */
+@media screen and (max-width: 1200px) {
+    .page.post-single .post-content {
+        max-width: 100%;
     }
     
-    .toc {
-        position: relative;  /* fixed 대신 relative로 변경 */
-        right: auto;
+    .page.post-single .toc {
+        position: static;
         width: 100%;
-        max-width: 100%;
         margin: 20px 0;
     }
 }
