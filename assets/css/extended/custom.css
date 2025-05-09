@@ -1,0 +1,18 @@
+.toc {
+    position: sticky;
+    top: 60px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin-right: 20px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+/* 스크롤바 스타일 (선택 사항) */
+.toc::-webkit-scrollbar {
+    width: 5px;
+}
+.toc::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
