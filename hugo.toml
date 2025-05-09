@@ -33,6 +33,12 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 30
+    
+  [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
