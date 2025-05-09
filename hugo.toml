@@ -28,6 +28,15 @@ enableRobotsTXT = true
   summaryLength = 120
   truncate = true
 
+
+  TocSide: 'left'  # TOC의 위치 (left 또는 right)
+  
+  # 다음 설정은 Hugo 내장 기능입니다
+  tableOfContents:
+    endLevel: 3    # TOC에 표시할 최대 헤딩 레벨 (기본값: 3)
+    ordered: false # 순서 있는 목록 사용 여부
+    startLevel: 2  # TOC에 표시할 최소 헤딩 레벨 (기본값: 2)
+
 [params.label]
   text = "잔향의 마음 로그"
 
@@ -37,7 +46,7 @@ enableRobotsTXT = true
     name = "Archive"
     url = "/archives/"
     weight = 30
-    
+
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
@@ -52,3 +61,6 @@ enableRobotsTXT = true
 
 [markup.highlight]
   noClasses = false
+
+
+  
