@@ -1,44 +1,43 @@
-/* 메인 콘텐츠 영역 조정 - 너비를 더 넓게 설정 */
-.post-content {
-    max-width: 85%;  /* 이전 70%에서 85%로 증가 */
+/* 전체 레이아웃 조정 */
+.main {
+    max-width: 1200px;  /* 전체 컨테이너 최대 너비 설정 */
+    margin: 0 auto;
+    position: relative;  /* 자식 요소의 절대 위치 기준점 */
 }
 
-/* 우측 고정 TOC - 약간 좁게 조정 */
+/* 본문 영역 조정 - 현재 보이는 너비 유지 */
+.post-content {
+    max-width: 100%;  /* 본문은 컨테이너 전체 너비 사용 */
+    padding-right: 280px;  /* TOC 영역만큼 오른쪽 패딩 추가 */
+}
+
+/* 우측 고정 TOC - 충분한 폭 확보 */
 .toc {
     position: fixed;
-    right: 10px;
+    right: calc((100% - 1200px) / 2 + 20px);  /* 중앙 정렬된 컨테이너 기준으로 오른쪽 위치 조정 */
     top: 100px;
-    width: 220px;  /* 이전 250px에서 줄임 */
+    width: 250px;  /* TOC 폭 넓게 설정 */
     max-height: calc(100vh - 150px);
     overflow-y: auto;
-    padding: 10px;  /* 패딩도 약간 줄임 */
+    padding: 15px;
     background-color: var(--entry);
     border-radius: 6px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 0.85rem;  /* 글꼴 크기도 약간 줄임 */
+    font-size: 0.9rem;
     z-index: 100;
 }
 
 /* 중간 크기 화면 대응 */
-@media screen and (max-width: 1600px) and (min-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .post-content {
-        max-width: 80%;
+        padding-right: 0;  /* 패딩 제거 */
     }
+    
     .toc {
-        width: 200px;
-        font-size: 0.8rem;
-    }
-}
-
-/* 작은 화면에서는 TOC 처리 */
-@media screen and (max-width: 1199px) {
-    .toc {
-        position: static;  /* fixed 대신 static으로 변경 */
+        position: relative;  /* fixed 대신 relative로 변경 */
+        right: auto;
         width: 100%;
         max-width: 100%;
         margin: 20px 0;
-    }
-    .post-content {
-        max-width: 100%;
     }
 }
